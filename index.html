@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Amistad</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+        .container {
+            position: relative;
+            width: 80%;
+            height: 80%;
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .image-container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 300px;
+            cursor: pointer;
+        }
+        .left {
+            left: 10%;
+        }
+        .right {
+            right: 10%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body style="background-image: url('tu-imagen-de-fondo.jpg');">
+    <audio autoplay loop>
+	<source src="tu-musica.ogg" type="audio/ogg">
+        <source src="tu-musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <div class="container">
+        <h1>Para Tú</h1>
+        <div class="image-container left" onclick="location.href='amistad.html'">
+            <img src="tu-imagen-izquierda.jpg" alt="Amistad">
+        </div>
+        <div class="image-container right" onclick="location.href='vale.html'">
+            <img src="tu-imagen-derecha.jpg" alt="Vale">
+        </div>
+    </div>
+</body>
+</html>
+
